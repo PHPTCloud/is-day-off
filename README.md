@@ -31,3 +31,18 @@ else
     echo 'Рабочий день.';
 }
 ```
+
+#### Filters
+
+
+```php
+// Countries
+isDayOff\Filters\UkraineFilter
+isDayOff\Filters\RussianFilter
+isDayOff\Filters\KazakhstanFilter
+isDayOff\Filters\BelorusFilter
+
+// Additional
+isDayOff\Filters\CovidFilter
+isDayOff\Filters\PreHolidayFilter
+```
