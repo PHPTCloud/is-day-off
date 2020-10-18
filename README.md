@@ -10,7 +10,7 @@ composer require phptcloud/isdayoff-sdk
 #### After install
 You can check the work of the scripts in the "Examples" folder. ;)
 
-#### Sample example
+#### Simple example
 
 ```php
 require_once __DIR__ . '/../vendor/autoload.php';
