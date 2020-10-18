@@ -1,0 +1,16 @@
+{
+    "name": "phptcloud/isdayoff-sdk",
+    "authors": [
+        {
+            "name": "TCloud",
+            "email": "tcloud.ax@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.0",
+        "fig/http-message-util": "1.*"
+    },
+    "autoload": {
+        "classmap": ["src"]
+    }
+}
