@@ -12,7 +12,7 @@ $client = new IsDayOff();
 
 /**
  * To filter data just add existing filter classes
- * to filters collection field.
+ * in filters collection.
  */
 $client->date()->filters()->add([
     new CovidFilter(),
