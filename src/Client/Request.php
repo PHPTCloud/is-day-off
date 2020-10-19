@@ -46,7 +46,6 @@ class Request
     /**
      * @param string $method
      * @param array $queryParams
-     * @param array $bodyContent
      * @return GuzzleHttp\Psr7\Response
      */
     public function get(string $uri, array $queryParams = [])
