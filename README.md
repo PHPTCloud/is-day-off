@@ -1,6 +1,6 @@
 # IsDayOf
 
-[![Latest Version](https://github.com/PHPTCloud/IsDayOff/releases/tag/1.0.1)](https://img.shields.io/badge/release-1.0.1-blue)
+[![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://github.com/PHPTCloud/IsDayOff/releases/tag/1.0.1)
 
 PHP SDK for [isdayof.ru](https://isdayoff.ru)
 
