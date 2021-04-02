@@ -14,8 +14,8 @@ $result = $client->date()->getDataPerMonth($date);
 echo '<table border="1">';
     echo '<thead>';
         echo '<tr>';
-            echo '<th>Дата</th>';
-            echo '<th>Выходной</th>';
+            echo '<th>Date</th>';
+            echo '<th>Is day off</th>';
         echo '</tr>';
     echo '</thead>';
 

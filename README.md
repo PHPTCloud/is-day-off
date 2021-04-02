@@ -24,11 +24,11 @@ $result = $client->date()->isDayOff($date);
 
 if($result)
 {
-    echo 'Выходной.';
+    echo 'is day off.';
 }
 else
 {
-    echo 'Рабочий день.';
+    echo 'working day.';
 }
 ```
 

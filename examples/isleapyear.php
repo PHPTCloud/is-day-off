@@ -11,11 +11,11 @@ $result = $client->date()->isLeapYear($date);
 
 if($result)
 {
-    echo 'Текущий год високосный.';
+    echo 'The current year is a leap year.';
 }
 else
 {
-    echo 'Текущий год не високосный.';
+    echo 'The current year is not a leap year.';
 }
 
 /**
@@ -27,9 +27,9 @@ $result = $client->date()->isLeapYear($date);
 
 if($result)
 {
-    echo '2030 високосный год.';
+    echo '2030 leap year.';
 }
 else
 {
-    echo '2030 не високосный год.';
+    echo '2030 is not a leap year.';
 }
