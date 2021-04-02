@@ -14,8 +14,8 @@
         "api"
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.*",
-        "fig/http-message-util": "^1.*"
+        "guzzlehttp/guzzle": "^6.0",
+        "fig/http-message-util": "^1.0"
     },
     "autoload": {
         "classmap": ["src"]
