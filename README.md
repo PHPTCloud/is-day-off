@@ -41,8 +41,28 @@ isDayOff\Filters\UkraineFilter
 isDayOff\Filters\RussianFilter
 isDayOff\Filters\KazakhstanFilter
 isDayOff\Filters\BelorusFilter
+isDayOff\Filters\UnitedStatesFilter
+isDayOff\Filters\UzbekistanFilter
+isDayOff\Filters\TurkeyFilter
 
 // Additional
 isDayOff\Filters\CovidFilter
 isDayOff\Filters\PreHolidayFilter
+```
+
+#### Filters examples
+
+```php
+/**
+ * New filter collection
+ */
+$filters = new FiltersCollection();
+$filters->addOne(new UkraineFilter());
+
+$client->date()->setFilters($filters);
+$date = new DateTime('2019/01/01');
+
+$result = $client->date()->getDataPerMonth($date);
+
+print_r($result);
 ```
