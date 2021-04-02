@@ -149,7 +149,7 @@ class DateService
     /**
      * @return array
      */
-    public function getQueryParamsFromFilterCollection()
+    protected function getQueryParamsFromFilterCollection()
     {
         $queryParams = [];
 
