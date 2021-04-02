@@ -3,8 +3,15 @@
     "authors": [
         {
             "name": "TCloud",
-            "email": "tcloud.ax@gmail.com"
+            "email": "tcloud.ax@gmail.com",
+            "homepage": "https://github.com/PHPTCloud"
         }
+    ],
+    "license": "MIT",
+    "description": "PHP SDK for isdayof.ru",
+    "keywords": [
+        "isdayoff",
+        "api"
     ],
     "require": {
         "guzzlehttp/guzzle": "6.*",
