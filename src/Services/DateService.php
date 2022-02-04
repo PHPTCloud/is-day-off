@@ -83,6 +83,38 @@ class DateService
     }
 
     /**
+     * @return boolean
+     */
+    public function tomorrow(): bool
+    {
+        try {
+            $resposen = $this->request->get('/' . DayModel::TOMORROW_ALIAS);
+        }
+        catch (Exception $e)
+        {
+            print_r($e->getMessage());
+        }
+
+        return (bool) $resposen->getBody()->getContents();
+    }
+
+    /**
+     * @return boolean
+     */
+    public function today(): bool
+    {
+        try {
+            $resposen = $this->request->get('/' . DayModel::TODAY_ALIAS);
+        }
+        catch (Exception $e)
+        {
+            print_r($e->getMessage());
+        }
+
+        return (bool) $resposen->getBody()->getContents();
+    }
+
+    /**
      * @param DateTime $date
      * @return bool
      */

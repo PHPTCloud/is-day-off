@@ -10,6 +10,9 @@ use DateTime;
 
 class DayModel
 {
+    public const TODAY_ALIAS = 'today';
+    public const TOMORROW_ALIAS = 'tomorrow';
+
     /**
      * @var DateTime
      */
