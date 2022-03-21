@@ -7,7 +7,7 @@
 PHP SDK for [isdayof.ru](https://isdayoff.ru)
 
 #### Instalation
-```php
+```bash
 composer require phptcloud/isdayoff-sdk
 ```
 
