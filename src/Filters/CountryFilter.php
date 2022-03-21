@@ -1,24 +1,16 @@
 <?php
-/**
- * @class CountryFilter
- * @package isDayOff\Filters
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Filters;
 
+/**
+ * @class   CountryFilter
+ * @package isDayOff\Filters
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 class CountryFilter extends AbstractFilter
 {
-    /**
-     * @var string
-     */
     public const PARAM_NAME = 'cc';
-    
-    /**
-     * CountryFilter constructor
-     */
-    public function __construct($value = '')
-    {
-        $this->paramName = self::PARAM_NAME;
-        $this->setValue($value);
-    }
 }

@@ -1,24 +1,16 @@
 <?php
-/**
- * @class TurkeyFilter
- * @package isDayOff\Filters
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Filters;
 
+/**
+ * @class   TurkeyFilter
+ * @package isDayOff\Filters
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 class TurkeyFilter extends CountryFilter
 {
-    /**
-     * @var string
-     */
     public const PARAM_VALUE = 'tr';
-    
-    /**
-     * CountryFilter constructor
-     */
-    public function __construct($value = '')
-    {
-        $this->paramName = self::PARAM_NAME;
-        $this->setValue(self::PARAM_VALUE);
-    }
 }

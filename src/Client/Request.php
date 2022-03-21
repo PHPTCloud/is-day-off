@@ -1,33 +1,24 @@
 <?php
-/**
- * @class Request
- * @package isDayOff\Client
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Client;
 
 use GuzzleHttp\Client as GuzzleClient;
 
+/**
+ * @class   Request
+ * @package isDayOff\Client
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 class Request
 {
-    /**
-     * @var string
-     */
     public const DOMAIN = 'isdayoff.ru';
-
-    /**
-     * @var string
-     */
     public const PROTOCOL = 'https';
 
-    /**
-     * @var GuzzleClient
-     */
-    private $request;
+    private GuzzleClient $request;
 
-    /**
-     * Request constructor
-     */
     public function __construct()
     {
         $this->request = new GuzzleClient([
@@ -45,12 +36,14 @@ class Request
 
     /**
      * @param string $method
-     * @param array $queryParams
+     * @param array  $queryParams
+     * 
      * @return GuzzleHttp\Psr7\Response
      */
     public function get(string $uri, array $queryParams = [])
     {
         $uri = $this->getBaseUrl() . $uri;
+
         return $this->request->request('GET', $uri, [
             'query' => $queryParams
         ]);

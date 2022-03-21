@@ -9,11 +9,8 @@ $client = new IsDayOff();
 $date = new DateTime('now');
 $result = $client->date()->isDayOff($date);
 
-if($result)
-{
+if($result) {
     echo 'is day off.';
-}
-else
-{
+} else {
     echo 'working day.';
 }

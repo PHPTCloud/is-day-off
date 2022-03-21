@@ -1,22 +1,23 @@
 <?php
-/**
- * @class DayModel
- * @package isDayOff\Models
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Models;
 
 use DateTime;
 
+/**
+ * @class   DayModel
+ * @package isDayOff\Models
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 class DayModel
 {
     public const TODAY_ALIAS = 'today';
     public const TOMORROW_ALIAS = 'tomorrow';
 
-    /**
-     * @var DateTime
-     */
-    private $date;
+    private ?DateTime $date;
 
     /**
      * is day off status
@@ -26,19 +27,27 @@ class DayModel
     private $status;
 
     /**
+     * @deprecated
      * @param string $format
+     * 
      * @return string|DateTime|null
      */
     public function getDate(?string $format = null)
     {
         $date = $this->date;
-
-        if($format)
-        {
+        if($format) {
             $date = $date->format($format);
         }
 
         return $date;
+    }
+
+    /**
+     * @return DateTime|null
+     */
+    public function getDateTime(): ?DateTime
+    {
+        return $this->date;
     }
 
     /**
@@ -61,11 +70,13 @@ class DayModel
 
     /**
      * @param bool $status
+     * 
      * @return this
      */
     public function setStatus(bool $status): self
     {
         $this->status = $status;
+
         return $this;
     }
 }

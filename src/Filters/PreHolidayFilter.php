@@ -1,24 +1,16 @@
 <?php
-/**
- * @class PreHolidayFilter
- * @package isDayOff\Filters
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Filters;
 
+/**
+ * @class   PreHolidayFilter
+ * @package isDayOff\Filters
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 class PreHolidayFilter extends AbstractFilter
 {
-    /**
-     * @var string
-     */
     public const PARAM_NAME = 'pre';
-    
-    /**
-     * CountryFilter constructor
-     */
-    public function __construct($value = '0')
-    {
-        $this->paramName = self::PARAM_NAME;
-        $this->setValue($value);
-    }
 }

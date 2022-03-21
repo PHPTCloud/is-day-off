@@ -1,21 +1,21 @@
 <?php
-/**
- * @class AbstractCollection
- * @package isDayOff\Collections
- */
+
+declare(strict_types=1);
 
 namespace isDayOff\Collections;
 
+/**
+ * @class   AbstractCollection
+ * @package isDayOff\Collections
+ * @author  Aleksey Yudov <tcloud.ax@gmail.com>
+ * @since   v1.0.1
+ */
 abstract class AbstractCollection
 {
-    /**
-     * @var array
-     */
-    protected $items;
+    protected array $items;
 
     /**
      * @param array $items
-     * @return this
      */
     public function __construct(?array $items = [])
     {
@@ -51,8 +51,9 @@ abstract class AbstractCollection
     }
 
     /**
-     * @param array
-     * @return this
+     * @param array $models
+     * 
+     * @return self
      */
     public function add(array $models): self
     {
@@ -62,7 +63,8 @@ abstract class AbstractCollection
 
     /**
      * @param mixed
-     * @return this
+     * 
+     * @return self
      */
     public function addOne($model): self
     {
@@ -71,8 +73,9 @@ abstract class AbstractCollection
     }
 
     /**
-     * @param integer
-     * @return this
+     * @param int $index
+     * 
+     * @return self
      */
     public function remove($index): self
     {
@@ -84,8 +87,9 @@ abstract class AbstractCollection
     }
 
     /**
-     * @param mixed
-     * @return this
+     * @param mixed $model
+     * 
+     * @return self
      */
     public function removeModel($model): self
     {

@@ -23,13 +23,10 @@ $client->date()->filters()->add([
 $date = new DateTime('now');
 $result = $client->date()->isDayOff($date);
 
-if($result)
-{
-    echo 'is day off.';
-}
-else
-{
-    echo 'working day.';
+if($result) {
+    echo 'is day off.', PHP_EOL;
+} else {
+    echo 'working day.', PHP_EOL;
 }
 
 /**
