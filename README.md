@@ -1,6 +1,6 @@
 # IsDayOf
 
-[![Latest Version](https://img.shields.io/badge/release-1.0-red)](https://github.com/PHPTCloud/IsDayOff/releases/tag/1.0)
+[![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://img.shields.io/badge/release-1.0.1-blue)
 
 PHP SDK for [isdayof.ru](https://isdayoff.ru)
 
@@ -25,12 +25,9 @@ $client = new IsDayOff();
 $date = new DateTime('now');
 $result = $client->date()->isDayOff($date);
 
-if($result)
-{
+if($result) {
     echo 'is day off.';
-}
-else
-{
+} else {
     echo 'working day.';
 }
 ```
