@@ -1,8 +1,8 @@
 # IsDayOf
 
-[![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://img.shields.io/badge/release-1.0.1-blue)
-[![Downloads](https://img.shields.io/badge/downloads-3%E2%80%89443-blue)](https://img.shields.io/badge/downloads-3%E2%80%89443-blue)
-[![Documentation](https://img.shields.io/badge/docs-yes-blue)](https://img.shields.io/badge/docs-yes-blue)
+[![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
+[![Downloads](https://img.shields.io/badge/downloads-3.9K%2B-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
+[![Documentation](https://img.shields.io/badge/docs-yes-blue)](https://github.com/PHPTCloud/IsDayOff/tree/master/examples)
 
 PHP SDK for [isdayof.ru](https://isdayoff.ru)
 
