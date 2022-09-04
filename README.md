@@ -1,6 +1,6 @@
 # IsDayOf
 
-[![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
+[![Latest Version](https://img.shields.io/badge/version-v1.1.0-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
 [![Downloads](https://img.shields.io/badge/downloads-%206.7k%2B-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
 [![Documentation](https://img.shields.io/badge/docs-yes-blue)](https://github.com/PHPTCloud/IsDayOff/tree/master/examples)
 
