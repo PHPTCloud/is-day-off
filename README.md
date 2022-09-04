@@ -1,7 +1,7 @@
 # IsDayOf
 
 [![Latest Version](https://img.shields.io/badge/release-1.0.1-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
-[![Downloads](https://img.shields.io/badge/downloads-3.9K%2B-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
+[![Downloads](https://img.shields.io/badge/downloads-%206.7k%2B-blue)](https://packagist.org/packages/phptcloud/isdayoff-sdk)
 [![Documentation](https://img.shields.io/badge/docs-yes-blue)](https://github.com/PHPTCloud/IsDayOff/tree/master/examples)
 
 PHP SDK for [isdayof.ru](https://isdayoff.ru)
@@ -68,5 +68,3 @@ $result = $client->date()->getDataPerMonth($date);
 
 print_r($result);
 ```
-
-[Donate](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=&default-sum=&button-text=11&hint=&successURL=&quickpay=shop&account=4100112097569724)

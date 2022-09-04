@@ -1,2 +1,4 @@
 vendor
 bootstrap.php
+.vscode/
+.idea/

@@ -6,6 +6,7 @@ use isDayOff\Client\IsDayOff;
 use isDayOff\Collections\FiltersCollection;
 use isDayOff\Filters\CovidFilter;
 use isDayOff\Filters\PreHolidayFilter;
+use isDayOff\Filters\Ru\BelgorodRegionFilter;
 use isDayOff\Filters\UkraineFilter;
 
 $client = new IsDayOff();
@@ -14,13 +15,12 @@ $client = new IsDayOff();
  * To filter data just add existing filter classes
  * in filters collection.
  */
+$date = new DateTime('now');
 $client->date()->filters()->add([
     new CovidFilter(),
     new PreHolidayFilter(),
-    new UkraineFilter(),
+    new BelgorodRegionFilter(),
 ]);
-
-$date = new DateTime('now');
 $result = $client->date()->isDayOff($date);
 
 if($result) {
