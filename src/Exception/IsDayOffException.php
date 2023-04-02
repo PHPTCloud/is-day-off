@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace IsDayOff\Exception;
+namespace isDayOff\Exception;
 
 use Exception;
 
