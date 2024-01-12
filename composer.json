@@ -14,7 +14,7 @@
         "api"
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.0",
+        "guzzlehttp/guzzle": "^7.0",
         "fig/http-message-util": "^1.0"
     },
     "autoload": {
